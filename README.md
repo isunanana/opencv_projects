@@ -2,8 +2,8 @@
 
 This repository contains multiple projects using the opencv library on Python
 The projects are :
-1. Straighten document image
-2.
+1. Straighten any image/Birdview
+2. Instagram filter Clarendon
 3.
 4.
 5.

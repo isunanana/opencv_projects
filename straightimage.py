@@ -1,6 +1,8 @@
 import cv2
 import numpy as np
 
+img = cv2.imread("document.jpg")
+
 circles = np.zeros((4,2),np.int)
 counter = 0
 
@@ -13,8 +15,6 @@ def mousePoints(event,x,y,flags,params):
         print(circles)
 
 
-
-img = cv2.imread("cards.jpg")
 while True:
 
 
@@ -23,8 +23,8 @@ while True:
         pts1 = np.float32([circles[0],circles[1],circles[2],circles[3]])
         pts2 = np.float32([[0,0],[width,0],[0,height],[width,height]])
         matrix = cv2.getPerspectiveTransform(pts1,pts2)
-        imgOutput = cv2.warpPerspective(img,matrix,(width,height))
-        cv2.imshow("Output Image ", imgOutput)
+        imgStaright = cv2.warpPerspective(img,matrix,(width,height))
+        cv2.imshow("Straightened Image ", imgStraight)
 
 
     for x in range (0,4):

@@ -5,5 +5,5 @@ The projects are :
 1. Straighten any image/Birdview
 2. Instagram filter Clarendon
 3. Contour in an Image
-4.
-5.
+4. Draw and Write anything on an Image
+5. Sunglass Filter
